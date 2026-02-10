@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside>
+        <div id="Navigation">
+            <div><button id="home-btn" class="sidebar-btn" data-tab="tab1">HOME</button></div>
+            <div><button class="sidebar-btn active" data-tab="tab2">Valley IV</button></div>
+            <div><button class="sidebar-btn" data-tab="tab3">Wuling</button></div>
+        </div>
+    </aside>
+
+    <div id="tabs">
+        <div id="tab1" class="tab-content">
+            <table>
+                <tr>
+                    <th rowspan="2"><span>Region</span></th>
+                    <th rowspan="2"><span>Station</span></th>
+                    <th colspan="6" style="border-bottom: none;"><span>Stock bill</span></th>
+                </tr>
+                <tr>
+                    <th><span>Earning Efficiency</span></th>
+                    <th><span>Bonus Earning Chance</span></th>
+                    <th><span>Earning Estimates</span></th>
+                    <th><span>Regional Earning Estimates</span></th>
+                    <th><span>Estimated Coverage</span></th>
+                    <th><span>Percent Covered</span></th>
+                </tr>
+                <tr>
+                    <td rowspan="3"><span>Valley IV</span></td>
+                    <td><span>Refugee Camp</span></td>
+                    <td><span id="refugee_camp-earning_efficiency">20820</span><span>/h</span></td>
+                    <td><input id="refugee_camp-bonus_earning_chance" type="number" value="40"><span>%</span></td>
+                    <td><span id="refugee_camp-earning_estimates"></span><span>/h</span></td>
+                    <td rowspan="3"><span id="valley4-regional_earning_estimates"></span><span>/h</span></td>
+                    <td rowspan="3"><span id="valley4-estimated_coverage"></span><span>/h</span></td>
+                    <td rowspan="3"><span id="valley4-percent_covered"></span><span>%</span></td>
+                </tr>
+                <tr>
+                    <td><span>Infra-Station</span></td>
+                    <td><span id="infra_station-earning_efficiency">27840</span><span>/h</span></td>
+                    <td><input id="infra_station-bonus_earning_chance" type="number" value="40"><span>%</span></td>
+                    <td><span id="infra_station-earning_estimates"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>Reconstruction HQ</span></td>
+                    <td><span id="reconstruction_hq-earning_efficiency">42840</span><span>/h</span></td>
+                    <td><input id="reconstruction_hq-bonus_earning_efficiency" type="number" value="20"><span>%</span>
+                    </td>
+                    <td><span id="reconstruction_hq-earning_estimates"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>Wuling</span></td>
+                    <td><span>Sky Knig Flats Construction Site</span></td>
+                    <td><span id="sky_king_flats_construction_site-earning_efficiency">12900</span><span>/h</span></td>
+                    <td><input id="sky_king_flats_construction_site-bonus_earning_chance" type="number"
+                            value="30"><span>%</span></td>
+                    <td><span id="sky_king_flats_construction_site-earning_estimates"></span><span>/h</span></td>
+                    <td><span id="wuling-regional_earning_estimates"></span><span>/h</span></td>
+                    <td><span id="sky_king_flats_construction_site-estimated_coverage"></span><span>/h</span></td>
+                    <td><span id="swuling-percent_covered"></span><span>%</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="tab2" class="tab-content active">
+            <table>
+                <tr>
+                    <th rowspan="3"><span>Resource Efficiecy</span></th>
+                    <th rowspan="3"><span>Unit</span></th>
+                    <th rowspan="3"><span>Factories</span></th>
+                    <th colspan="6"><span>Resource Cost</span></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><span>Ore 1 Factory</span></th>
+                    <th colspan="3"><span>For <span id="factory-count">n</span> Factories</span></th>
+                </tr>
+                <tr>
+                    <th><img alt="Originium Ore Picture" class="img" src="assets/originium_ore.webp" /></th>
+                    <th>Amethyst</th>
+                    <th>Ferrium</th>
+                    <th>Originium</th>
+                    <th>Amethyst</th>
+                    <th>Ferrium</th>
+                </tr>
+            </table>
+        </div>
+        <div id="tab3" class="tab-content">
+            <table>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
