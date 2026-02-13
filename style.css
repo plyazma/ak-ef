@@ -1,28 +1,35 @@
 html,
 body {
-    background: linear-gradient(#242424 0%, #121212 75%, #000000 100%);
+    background: linear-gradient(to bottom, #303030 0%, #121212 95%, #000000 100%);
+    height: 100vw;
     margin: 0;
+    width: 100%;
 }
 
 body {
     display: flex;
-    min-height: 100vh;
 }
 
 button,
 td,
 th {
     color: #e0e0e0;
-    font-size: 20px;
+    font-size: 19px;
 }
 
-/*aside*/
+#Navigation hr {
+    border-color: #ffff33;
+    margin: 1px 0px 1px 0px;
+}
+
+/* aside */
 
 aside #Navigation {
     border-right: 1px solid #ffff33;
     left: 0;
-    min-height: 100vh;
-    width: 150px;
+    min-height: 100%;
+    min-width: fit-content;
+    width: 100px;
 }
 
 #home-btn {
@@ -34,7 +41,7 @@ aside #Navigation {
     border: none;
     cursor: pointer;
     height: 40px;
-    margin-top: 2px;
+    margin: 1px 0px 1px 0px;
     transition: height 0.2s;
     width: 100%;
 }
@@ -48,11 +55,12 @@ aside #Navigation {
     background-color: #333333;
 }
 
-/*table*/
+/* table */
 
 table {
     border-collapse: separate;
     border-spacing: 3px;
+    width: 100%;
 }
 
 th,
@@ -66,16 +74,17 @@ td {
 
 #tab1 tr:nth-child(2) th,
 #tab1 tr:first-child th:nth-child(1),
-#tab1 tr:first-child th:nth-child(2) {
-    border-bottom: 1px solid #ffff33;
-}
-
+#tab1 tr:first-child th:nth-child(2),
 #tab2 tr:nth-child(3) th,
-#tab2 tr:first-child th{
-    border-bottom: 1px solid #ffff33;
+#tab2 tr:first-child th,
+#tab3 tr:nth-child(3) th,
+#tab3 tr:first-child th,
+#tab99 tr:nth-child(2) th {
+    border-bottom: 2px solid #ffff33;
 }
 
-#tab2 tr:first-child th:nth-child(4) {
+#tab2 tr:first-child th:nth-child(4),
+#tab3 tr:first-child th:nth-child(4) {
     border: none;
 }
 
@@ -95,7 +104,7 @@ tr:last-child td:last-child {
     border-bottom-right-radius: 12px;
 }
 
-/*tabs*/
+/* tabs */
 
 .tab-content {
     display: none;
@@ -112,13 +121,13 @@ tr:last-child td:last-child {
 
 #tabs {
     margin: 0 auto;
-    max-width: 85%;
+    width: 88vw;
     padding-top: 40px;
 }
 
-/**/
+/*  */
 
-.img  {
+.img {
     display: block;
     height: 100%;
     object-fit: cover;

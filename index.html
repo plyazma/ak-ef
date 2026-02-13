@@ -8,61 +8,69 @@
 <body>
     <aside>
         <div id="Navigation">
-            <div><button id="home-btn" class="sidebar-btn" data-tab="tab1">HOME</button></div>
-            <div><button class="sidebar-btn active" data-tab="tab2">Valley IV</button></div>
+            <div><button id="home-btn" class="sidebar-btn active" data-tab="tab1">HOME</button></div>
+            <hr />
+            <div><button class="sidebar-btn" data-tab="tab2">Valley IV</button></div>
             <div><button class="sidebar-btn" data-tab="tab3">Wuling</button></div>
+            <hr />
+            <div><button class="sidebar-btn" data-tab="tab99">Settings</button></div>
         </div>
     </aside>
 
     <div id="tabs">
-        <div id="tab1" class="tab-content">
+        <div id="tab1" class="tab-content active">
             <table>
                 <tr>
-                    <th rowspan="2"><span>Region</span></th>
-                    <th rowspan="2"><span>Station</span></th>
-                    <th colspan="6" style="border-bottom: none;"><span>Stock bill</span></th>
+                    <th rowspan="2"> <span>Region</span> </th>
+                    <th rowspan="2"> <span>Station</span> </th>
+                    <th colspan="6" style="border-bottom: none;"> <span>Stock bill</span> </th>
                 </tr>
                 <tr>
-                    <th><span>Earning Efficiency</span></th>
-                    <th><span>Bonus Earning Chance</span></th>
+                    <th> <span>Earning Efficiency</span> </th>
+                    <th> <span>Bonus Earning Chance</span> </th>
                     <th><span>Earning Estimates</span></th>
                     <th><span>Regional Earning Estimates</span></th>
-                    <th><span>Estimated Coverage</span></th>
+                    <th><span>Coverage</span></th>
                     <th><span>Percent Covered</span></th>
                 </tr>
                 <tr>
                     <td rowspan="3"><span>Valley IV</span></td>
                     <td><span>Refugee Camp</span></td>
-                    <td><span id="refugee_camp-earning_efficiency">20820</span><span>/h</span></td>
-                    <td><input id="refugee_camp-bonus_earning_chance" type="number" value="40"><span>%</span></td>
-                    <td><span id="refugee_camp-earning_estimates"></span><span>/h</span></td>
-                    <td rowspan="3"><span id="valley4_ov-earning_estimates"></span><span>/h</span></td>
-                    <td rowspan="3"><span id="valley4_ov-estimated_coverage"></span><span>/h</span></td>
-                    <td rowspan="3"><span id="valley4_ov-percent_covered"></span><span>%</span></td>
+                    <td><span id="valley4-refugee_camp-earning_efficiency">20820</span><span>/h</span></td>
+                    <td><input id="valley4-refugee_camp-bonus_earning_chance" type="number" value="40"><span>%</span>
+                    </td>
+                    <td><span id="valley4-refugee_camp-earning_estimates"></span><span>/h</span></td>
+                    <td rowspan="3"><span id="valley4-earning_estimates"></span><span>/h</span></td>
+                    <td rowspan="3"><span id="valley4-coverage"></span><span>/h</span></td>
+                    <td rowspan="3"><span id="valley4-percent_covered"></span><span>%</span></td>
                 </tr>
                 <tr>
                     <td><span>Infra-Station</span></td>
-                    <td><span id="infra_station-earning_efficiency">27840</span><span>/h</span></td>
-                    <td><input id="infra_station-bonus_earning_chance" type="number" value="40"><span>%</span></td>
-                    <td><span id="infra_station-earning_estimates"></span><span>/h</span></td>
+                    <td><span id="valley4-infra_station-earning_efficiency">27840</span><span>/h</span></td>
+                    <td><input id="valley4-infra_station-bonus_earning_chance" type="number" value="40"><span>%</span>
+                    </td>
+                    <td><span id="valley4-infra_station-earning_estimates"></span><span>/h</span></td>
                 </tr>
                 <tr>
                     <td><span>Reconstruction HQ</span></td>
-                    <td><span id="reconstruction_hq-earning_efficiency">42840</span><span>/h</span></td>
-                    <td><input id="reconstruction_hq-bonus_earning_chance" type="number" value="20"><span>%</span>
+                    <td><span id="valley4-reconstruction_hq-earning_efficiency">42840</span><span>/h</span></td>
+                    <td><input id="valley4-reconstruction_hq-bonus_earning_chance" type="number"
+                            value="20"><span>%</span>
                     </td>
-                    <td><span id="reconstruction_hq-earning_estimates"></span><span>/h</span></td>
+                    <td><span id="valley4-reconstruction_hq-earning_estimates"></span><span>/h</span></td>
                 </tr>
                 <tr>
                     <td><span>Wuling</span></td>
-                    <td><span>Sky Knig Flats Construction Site</span></td>
-                    <td><span id="sky_king_flats_construction_site-earning_efficiency">12900</span><span>/h</span></td>
-                    <td><input id="sky_king_flats_construction_site-bonus_earning_chance" type="number"
+                    <td><span>Sky King Flats Construction Site</span></td>
+                    <td><span
+                            id="wuling-sky_king_flats_construction_site-earning_efficiency">12900</span><span>/h</span>
+                    </td>
+                    <td><input id="wuling-sky_king_flats_construction_site-bonus_earning_chance" type="number"
                             value="30"><span>%</span></td>
-                    <td><span id="sky_king_flats_construction_site-earning_estimates"></span><span>/h</span></td>
-                    <td><span id="wuling_ov-earning_estimates"></span><span>/h</span></td>
-                    <td><span id="wuling_ov-estimated_coverage"></span><span>/h</span></td>
-                    <td><span id="wuling_ov-percent_covered"></span><span>%</span></td>
+                    <td><span id="wuling-sky_king_flats_construction_site-earning_estimates"></span><span>/h</span></td>
+                    <td><span id="wuling-earning_estimates"></span><span>/h</span></td>
+                    <td><span id="wuling-coverage"></span><span>/h</span></td>
+                    <td><span id="wuling-percent_covered"></span><span>%</span></td>
                 </tr>
             </table>
         </div>
@@ -72,14 +80,15 @@
                     <th rowspan="3"><span>Resource Efficiecy</span></th>
                     <th rowspan="3"><span>Unit</span></th>
                     <th rowspan="3"><span>Factories</span></th>
-                    <th colspan="6"><span>Resource Cost (n/min)</span></th>
+                    <th colspan="6"><span>Resource Cost (pcs/min)</span></th>
+                    <th rowspan="3"><span>Unit Output For 1 Minute</span></th>
                     <th rowspan="3"><span>Unit Output</span></th>
                     <th rowspan="3"><span>Unit Price</span></th>
                     <th colspan="2" rowspan="3"><span>Stock Bill Income</span></th>
                 </tr>
                 <tr>
                     <th colspan="3"><span>For 1 Factory</span></th>
-                    <th colspan="3"><span>For <span id="factory-count">n</span> Factories</span></th>
+                    <th colspan="3"><span>For <span id="valley4-factories_num"></span> Factories</span></th>
                 </tr>
                 <tr>
                     <th><img alt="Originium Ore Picture" class="img" src="assets/originium_ore.webp" /></th>
@@ -91,7 +100,7 @@
                 </tr>
                 <tr>
                     <td><span>105</span></td>
-                    <td><span>Buck Capsule [A] / Canned Citrome [A]</span></td>
+                    <td><span>Buck Capsule [A]<br />Canned Citrome [A]</span></td>
                     <td><input id="valley4-buck_capsule_a-factories_num" type="number" value="0" /></td>
                     <td><span id="valley4-buck_capsule_a-1_cost-originium">0</span></td>
                     <td><span id="valley4-buck_capsule_a-1_cost-amethyst">0</span></td>
@@ -99,31 +108,298 @@
                     <td><span id="valley4-buck_capsule_a-n_cost-originium">0</span></td>
                     <td><span id="valley4-buck_capsule_a-n_cost-amethyst">0</span></td>
                     <td><span id="valley4-buck_capsule_a-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-buck_capsule_a-1_output">6</span><span>/min</span></td>
                     <td><span id="valley4-buck_capsule_a-output"></span><span>/min</span></td>
                     <td><span id="valley4-buck_capsule_a-price">70</span></td>
-                    <td><span id="valley4-buck_capsule_a-income_min"></span><span>/min</span></td>
-                    <td><span id="valley4-buck_capsule_a-income_hour"></span><span>/h</span></td>
+                    <td><span id="valley4-buck_capsule_a-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-buck_capsule_a-income_per_hour"></span><span>/h</span></td>
                 </tr>
                 <tr>
                     <td><span>84</span></td>
                     <td><span>HC Valley Battery</span></td>
-                    <td><input id="valley4-buck_capsule_a-factories_num" type="number" value="0" /></td>
-                    <td><span id="valley4-buck_capsule_a-1_cost-originium">0</span></td>
-                    <td><span id="valley4-buck_capsule_a-1_cost-amethyst">0</span></td>
-                    <td><span id="valley4-buck_capsule_a-1_cost-ferrium">0</span></td>
-                    <td><span id="valley4-buck_capsule_a-n_cost-originium">0</span></td>
-                    <td><span id="valley4-buck_capsule_a-n_cost-amethyst">0</span></td>
-                    <td><span id="valley4-buck_capsule_a-n_cost-ferrium">0</span></td>
-                    <td><span id="valley4-buck_capsule_a-output"></span><span>/min</span></td>
-                    <td><span id="valley4-buck_capsule_a-price">70</span></td>
-                    <td><span id="valley4-buck_capsule_a-income_min"></span><span>/min</span></td>
-                    <td><span id="valley4-buck_capsule_a-income_hour"></span><span>/h</span></td>
+                    <td><input id="valley4-hc_valley_battery-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-hc_valley_battery-1_cost-originium">180</span></td>
+                    <td><span id="valley4-hc_valley_battery-1_cost-amethyst">0</span></td>
+                    <td><span id="valley4-hc_valley_battery-1_cost-ferrium">120</span></td>
+                    <td><span id="valley4-hc_valley_battery-n_cost-originium">0</span></td>
+                    <td><span id="valley4-hc_valley_battery-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-hc_valley_battery-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-hc_valley_battery-1_output">6</span><span>/min</span></td>
+                    <td><span id="valley4-hc_valley_battery-output"></span><span>/min</span></td>
+                    <td><span id="valley4-hc_valley_battery-price">70</span></td>
+                    <td><span id="valley4-hc_valley_battery-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-hc_valley_battery-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>72</span></td>
+                    <td><span>SC Valley Battery</span></td>
+                    <td><input id="valley4-sc_valley_battery-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-sc_valley_battery-1_cost-originium">90</span></td>
+                    <td><span id="valley4-sc_valley_battery-1_cost-amethyst">0</span></td>
+                    <td><span id="valley4-sc_valley_battery-1_cost-ferrium">60</span></td>
+                    <td><span id="valley4-sc_valley_battery-n_cost-originium">0</span></td>
+                    <td><span id="valley4-sc_valley_battery-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-sc_valley_battery-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-sc_valley_battery-1_output">6</span><span>/min</span></td>
+                    <td><span id="valley4-sc_valley_battery-output"></span><span>/min</span></td>
+                    <td><span id="valley4-sc_valley_battery-price">30</span></td>
+                    <td><span id="valley4-sc_valley_battery-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-sc_valley_battery-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>81</span></td>
+                    <td><span>Buck Capsule [B]<br />Canned Citrome [B]</span></td>
+                    <td><input id="valley4-buck_capsule_b-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-buck_capsule_b-1_cost-originium">0</span></td>
+                    <td><span id="valley4-buck_capsule_b-1_cost-amethyst">0</span></td>
+                    <td><span id="valley4-buck_capsule_b-1_cost-ferrium">120</span></td>
+                    <td><span id="valley4-buck_capsule_b-n_cost-originium">0</span></td>
+                    <td><span id="valley4-buck_capsule_b-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-buck_capsule_b-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-buck_capsule_b-1_output">6</span><span>/min</span></td>
+                    <td><span id="valley4-buck_capsule_b-output"></span><span>/min</span></td>
+                    <td><span id="valley4-buck_capsule_b-price">27</span></td>
+                    <td><span id="valley4-buck_capsule_b-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-buck_capsule_b-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>60</span></td>
+                    <td><span>Buck Capsule [C]<br />Canned Citrome [C]</span></td>
+                    <td><input id="valley4-buck_capsule_c-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-buck_capsule_c-1_cost-originium">0</span></td>
+                    <td><span id="valley4-buck_capsule_c-1_cost-amethyst">60</span></td>
+                    <td><span id="valley4-buck_capsule_c-1_cost-ferrium">0</span></td>
+                    <td><span id="valley4-buck_capsule_c-n_cost-originium">0</span></td>
+                    <td><span id="valley4-buck_capsule_c-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-buck_capsule_c-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-buck_capsule_c-1_output">6</span><span>/min</span></td>
+                    <td><span id="valley4-buck_capsule_c-output"></span><span>/min</span></td>
+                    <td><span id="valley4-buck_capsule_c-price">10</span></td>
+                    <td><span id="valley4-buck_capsule_c-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-buck_capsule_c-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>60</span></td>
+                    <td><span>Amethyst Bottle</span></td>
+                    <td><input id="valley4-amethyst_bottle-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-amethyst_bottle-1_cost-originium">0</span></td>
+                    <td><span id="valley4-amethyst_bottle-1_cost-amethyst">60</span></td>
+                    <td><span id="valley4-amethyst_bottle-1_cost-ferrium">0</span></td>
+                    <td><span id="valley4-amethyst_bottle-n_cost-originium">0</span></td>
+                    <td><span id="valley4-amethyst_bottle-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-amethyst_bottle-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-amethyst_bottle-1_output">30</span><span>/min</span></td>
+                    <td><span id="valley4-amethyst_bottle-output"></span><span>/min</span></td>
+                    <td><span id="valley4-amethyst_bottle-price">2</span></td>
+                    <td><span id="valley4-amethyst_bottle-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-amethyst_bottle-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>60</span></td>
+                    <td><span>Amethyst Part</span></td>
+                    <td><input id="valley4-amethyst_part-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-amethyst_part-1_cost-originium">0</span></td>
+                    <td><span id="valley4-amethyst_part-1_cost-amethyst">30</span></td>
+                    <td><span id="valley4-amethyst_part-1_cost-ferrium">0</span></td>
+                    <td><span id="valley4-amethyst_part-n_cost-originium">0</span></td>
+                    <td><span id="valley4-amethyst_part-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-amethyst_part-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-amethyst_part-1_output">30</span><span>/min</span></td>
+                    <td><span id="valley4-amethyst_part-output"></span><span>/min</span></td>
+                    <td><span id="valley4-amethyst_part-price">1</span></td>
+                    <td><span id="valley4-amethyst_part-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-amethyst_part-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>60</span></td>
+                    <td><span>Origocrust</span></td>
+                    <td><input id="valley4-origocrust-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-origocrust-1_cost-originium">30</span></td>
+                    <td><span id="valley4-origocrust-1_cost-amethyst">0</span></td>
+                    <td><span id="valley4-origocrust-1_cost-ferrium">0</span></td>
+                    <td><span id="valley4-origocrust-n_cost-originium">0</span></td>
+                    <td><span id="valley4-origocrust-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-origocrust-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-origocrust-1_output">30</span><span>/min</span></td>
+                    <td><span id="valley4-origocrust-output"></span><span>/min</span></td>
+                    <td><span id="valley4-origocrust-price">1</span></td>
+                    <td><span id="valley4-origocrust-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-origocrust-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>60</span></td>
+                    <td><span>LC Valley Battery</span></td>
+                    <td><input id="valley4-lc_valley_battery-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-lc_valley_battery-1_cost-originium">0</span></td>
+                    <td><span id="valley4-lc_valley_battery-1_cost-amethyst">0</span></td>
+                    <td><span id="valley4-lc_valley_battery-1_cost-ferrium">30</span></td>
+                    <td><span id="valley4-lc_valley_battery-n_cost-originium">0</span></td>
+                    <td><span id="valley4-lc_valley_battery-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-lc_valley_battery-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-lc_valley_battery-1_output">30</span><span>/min</span></td>
+                    <td><span id="valley4-lc_valley_battery-output"></span><span>/min</span></td>
+                    <td><span id="valley4-lc_valley_battery-price">1</span></td>
+                    <td><span id="valley4-lc_valley_battery-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-lc_valley_battery-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>60</span></td>
+                    <td><span>Ferrium Part</span></td>
+                    <td><input id="valley4-ferrium_part-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-ferrium_part-1_cost-originium">0</span></td>
+                    <td><span id="valley4-ferrium_part-1_cost-amethyst">0</span></td>
+                    <td><span id="valley4-ferrium_part-1_cost-ferrium">30</span></td>
+                    <td><span id="valley4-ferrium_part-n_cost-originium">0</span></td>
+                    <td><span id="valley4-ferrium_part-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-ferrium_part-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-ferrium_part-1_output">6</span><span>/min</span></td>
+                    <td><span id="valley4-ferrium_part-output"></span><span>/min</span></td>
+                    <td><span id="valley4-ferrium_part-price">16</span></td>
+                    <td><span id="valley4-ferrium_part-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-ferrium_part-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>90</span></td>
+                    <td><span>Steel Part</span></td>
+                    <td><input id="valley4-steel_part-factories_num" type="number" value="0" /></td>
+                    <td><span id="valley4-steel_part-1_cost-originium">0</span></td>
+                    <td><span id="valley4-steel_part-1_cost-amethyst">0</span></td>
+                    <td><span id="valley4-steel_part-1_cost-ferrium">60</span></td>
+                    <td><span id="valley4-steel_part-n_cost-originium">0</span></td>
+                    <td><span id="valley4-steel_part-n_cost-amethyst">0</span></td>
+                    <td><span id="valley4-steel_part-n_cost-ferrium">0</span></td>
+                    <td><span id="valley4-steel_part-1_output">30</span><span>/min</span></td>
+                    <td><span id="valley4-steel_part-output"></span><span>/min</span></td>
+                    <td><span id="valley4-steel_part-price">3</span></td>
+                    <td><span id="valley4-steel_part-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="valley4-steel_part-income_per_hour"></span><span>/h</span></td>
                 </tr>
             </table>
         </div>
-        <div id="tab3" class="tab-content">
+        <div id="tab3" class="tab-content active">
             <table>
-
+                <tr>
+                    <th rowspan="3"><span>Resource Efficiecy</span></th>
+                    <th rowspan="3"><span>Unit</span></th>
+                    <th rowspan="3"><span>Factories</span></th>
+                    <th colspan="6"><span>Resource Cost (pcs/min)</span></th>
+                    <th rowspan="3"><span>Unit Output For 1 Minute</span></th>
+                    <th rowspan="3"><span>Unit Output</span></th>
+                    <th rowspan="3"><span>Unit Price</span></th>
+                    <th colspan="2" rowspan="3"><span>Stock Bill Income</span></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><span>For 1 Factory</span></th>
+                    <th colspan="3"><span>For <span id="wuling-factories_num"></span> Factories</span></th>
+                </tr>
+                <tr>
+                    <th><img alt="Originium Ore Picture" class="img" src="assets/originium_ore.webp" /></th>
+                    <th><img alt="Amethyst Ore Picture" class="img" src="assets/amethyst_ore.webp" /></th>
+                    <th><img alt="Ferrium Ore Picture" class="img" src="assets/ferrium_ore.webp" /></th>
+                    <th><img alt="Originium Ore Picture" class="img" src="assets/originium_ore.webp" /></th>
+                    <th><img alt="Amethyst Ore Picture" class="img" src="assets/amethyst_ore.webp" /></th>
+                    <th><img alt="Ferrium Ore Picture" class="img" src="assets/ferrium_ore.webp" /></th>
+                </tr>
+                <tr>
+                    <td><span>50</span></td>
+                    <td><span>LC Wuling Battery</span></td>
+                    <td><input id="wuling-lc_wuling_battery-factories_num" type="number" value="0" /></td>
+                    <td><span id="wuling-lc_wuling_battery-1_cost-originium">180</span></td>
+                    <td><span id="wuling-lc_wuling_battery-1_cost-amethyst">0</span></td>
+                    <td><span id="wuling-lc_wuling_battery-1_cost-ferrium">0</span></td>
+                    <td><span id="wuling-lc_wuling_battery-n_cost-originium">0</span></td>
+                    <td><span id="wuling-lc_wuling_battery-n_cost-amethyst">0</span></td>
+                    <td><span id="wuling-lc_wuling_battery-n_cost-ferrium">0</span></td>
+                    <td><span id="wuling-lc_wuling_battery-1_output">6</span><span>/min</span></td>
+                    <td><span id="wuling-lc_wuling_battery-output"></span><span>/min</span></td>
+                    <td><span id="wuling-lc_wuling_battery-price">25</span></td>
+                    <td><span id="wuling-lc_wuling_battery-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="wuling-lc_wuling_battery-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>48</span></td>
+                    <td><span>Yazhen Syringe [C]<br />Jincao Drink [C]</span></td>
+                    <td><input id="wuling-yazhen_syringe_c-factories_num" type="number" value="0" /></td>
+                    <td><span id="wuling-yazhen_syringe_c-1_cost-originium">0</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-1_cost-amethyst">0</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-1_cost-ferrium">120</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-n_cost-originium">0</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-n_cost-amethyst">0</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-n_cost-ferrium">0</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-1_output">6</span><span>/min</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-output"></span><span>/min</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-price">16</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="wuling-yazhen_syringe_c-income_per_hour"></span><span>/h</span></td>
+                </tr>
+                <tr>
+                    <td><span>-</span></td>
+                    <td><span>Xiranite</span></td>
+                    <td><input id="wuling-xiranite-factories_num" type="number" value="0" /></td>
+                    <td><span id="wuling-xiranite-1_cost-originium">0</span></td>
+                    <td><span id="wuling-xiranite-1_cost-amethyst">0</span></td>
+                    <td><span id="wuling-xiranite-1_cost-ferrium">0</span></td>
+                    <td><span id="wuling-xiranite-n_cost-originium">0</span></td>
+                    <td><span id="wuling-xiranite-n_cost-amethyst">0</span></td>
+                    <td><span id="wuling-xiranite-n_cost-ferrium">0</span></td>
+                    <td><span id="wuling-xiranite-1_output">30</span><span>/min</span></td>
+                    <td><span id="wuling-xiranite-output"></span><span>/min</span></td>
+                    <td><span id="wuling-xiranite-price">1</span></td>
+                    <td><span id="wuling-xiranite-income_per_minute"></span><span>/min</span></td>
+                    <td><span id="wuling-xiranite-income_per_hour"></span><span>/h</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="tab99" class="tab-content active">
+            <table>
+                <tr>
+                    <th colspan="5">Battery Consumption</th>
+                </tr>
+                <tr>
+                    <th><span>Region</span></th>
+                    <th><span>Battery Type</span></th>
+                    <th><span>Thermal Bank Count</span></th>
+                    <th><span>Battery Consumption Speed</span></th>
+                    <th><span>Battery Consumption</span></th>
+                </tr>
+                <tr>
+                    <td rowspan="4"><span>Valley IV</span></td>
+                    <td>Originium Ore</td>
+                    <td><input id="valley4-valley4_originium_ore-thermal_bank_count" type="number" value="0" /></td>
+                    <td><span id="valley4-valley4_originium_ore-consumption_speed">12</span><span>/min</span></td>
+                    <td><span id="valley4-valley4_originium_ore-consumption"></span><span>/min</span></td>
+                </tr>
+                <tr>
+                    <td><span>LC Valley Battery</span></td>
+                    <td><input id="valley4-lc_valley_battery-thermal_bank_count" type="number" value="0" /></td>
+                    <td><span id="valley4-lc_valley_battery-consumption_speed">1.5</span><span>/min</span></td>
+                    <td><span id="valley4-lc_valley_battery-consumption"></span><span>/min</span></td>
+                </tr>
+                <tr>
+                    <td><span>SC Valley Battery</span></td>
+                    <td><input id="valley4-sc_valley_battery-thermal_bank_count" type="number" value="0" /></td>
+                    <td><span id="valley4-sc_valley_battery-consumption_speed">1.5</span><span>/min</span></td>
+                    <td><span id="valley4-sc_valley_battery-consumption"></span><span>/min</span></td>
+                </tr>
+                <tr>
+                    <td><span>HC Valley Battery</span></td>
+                    <td><input id="valley4-hc_valley_battery-thermal_bank_count" type="number" value="0" /></td>
+                    <td><span id="valley4-hc_valley_battery-consumption_speed">1.5</span><span>/min</span></td>
+                    <td><span id="valley4-hc_valley_battery-consumption"></span><span>/min</span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><span>Wuling</span></td>
+                    <td>Originium Ore</td>
+                    <td><input id="wuling-wuling_originium_ore-thermal_bank_count" type="number" value="0" /></td>
+                    <td><span id="wuling-wuling_originium_ore-consumption_speed">12</span><span>/min</span></td>
+                    <td><span id="wuling-wuling_originium_ore-consumption"></span><span>/min</span></td>
+                </tr>
+                <tr>
+                    <td><span>LC Wuling Battery</span></td>
+                    <td><input id="wuling-lc_wuling_battery-thermal_bank_count" type="number" value="0" /></td>
+                    <td><span id="wuling-lc_wuling_battery-consumption_speed">1.5</span><span>/min</span></td>
+                    <td><span id="wuling-lc_wuling_battery-consumption"></span><span>/min</span></td>
+                </tr>
             </table>
         </div>
     </div>
